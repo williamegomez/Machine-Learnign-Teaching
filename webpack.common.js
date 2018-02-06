@@ -10,7 +10,7 @@ module.exports = {
     main: './src/main.js'
   },
   output: {
-    path: __dirname + '/dist',
+    path: __dirname + '/docs',
     filename: '[name].js',
   },
   module: {
@@ -40,7 +40,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(['docs']),
     new StyleLintPlugin(),
     new ExtractTextPlugin('styles.css'),
     new HtmlWebpackPlugin({
