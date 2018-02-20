@@ -1,0 +1,17 @@
+@import 'reset.scss';
+
+@mixin medium {
+  @media (min-width: 640px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,25 @@
+{
+  "logo": {
+    "img": "assets/images/logo-fitted.png",
+    "link": "/"
+  },
+  "links": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Repository",
+      "href": "https://github.com/williamegomez/Machine-Learning-Teaching"
+    },
+    {
+      "label": "Projects",
+      "links": [
+        {
+        "label": "2018-1",
+        "href": "/"
+        }
+      ]
+    }
+  ]
+}

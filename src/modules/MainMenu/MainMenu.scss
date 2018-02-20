@@ -1,0 +1,223 @@
+@import 'src/modules/shared/base.scss';
+@import 'src/modules/shared/variables.scss';
+
+.main-menu {
+  background-color: $primaryColor;
+  font-family: $fonts;
+  font-size: $mediumSizeFont;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+
+  &__upper{
+    z-index: 3;
+    width: 100%;
+    background-color: $primaryColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__hamburger{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid $secondaryColor;
+    border-radius: 3px;
+    margin: 10px;
+    
+    @include medium {
+      display: none;
+    }
+    @include large {
+      display: none;
+    }
+    
+    &-top{
+      display: block;
+      height: 2px;
+      width: 20px;
+      background-color: $textColor;
+      transform: translateY(-3px);
+      transition: 0.5s;
+
+      &--open{
+        transform: translateY(1px) rotate(45deg);
+      }
+    }
+
+    &-bottom{
+      display: block;
+      height: 2px;
+      width: 20px;
+      background-color: $textColor;
+      transform: translateY(3px);
+      transition: 0.5s;
+
+      &--open{
+        transform: translateY(-1px) rotate(-45deg);
+      }
+    }
+  }
+
+  &__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  &__imagelogo{
+    height: 80px;
+    
+    @include large {
+      height: 150px;
+    }
+  }
+
+  &__list{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background-color: $primaryColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s;
+    z-index: 2;
+
+    @include medium {
+      position: unset;
+      flex-direction: row;
+      &--open{
+        transform: translateY(0%);
+      }
+    }
+
+    @include large {
+      position: unset;
+      flex-direction: row;
+      &--open{
+        transform: translateY(0%);
+      }
+    }
+
+    &--open{
+      transform: translateY(100%);
+    }
+  }
+
+  &__item{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 0px solid white;
+    border-width: 0px 0px 1px 0px;
+    padding: 5px;
+
+    @include medium {
+      position: relative;
+      border-width: 0px;
+    }
+
+    @include large {
+      position: relative;
+      border-width: 0px;
+    }
+  }
+
+  &__sublist{
+    width: 100%;
+    display: none;
+    transition: 1s;
+
+    @include medium {
+      display: block;
+      position: absolute;
+      bottom: 0px;
+    }
+
+    @include large {
+      display: block;
+      position: absolute;
+      bottom: 0px;
+    }
+
+    &--open{
+      display: block;
+      @include medium {
+        transform: translateY(100%)
+      }
+
+      @include large {
+        transform: translateY(100%)
+      }
+    }   
+  }
+
+  &__subitem{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+
+  &__button{
+    z-index: 2;
+    padding: 0;
+    height: $mediumSize;
+    width: 100%;
+    font-family: $fonts;
+    font-size: $mediumSizeFont;
+    border: 2px solid #6294ff;
+    background-color: $primaryColor;
+
+    @include large {
+      height: $largeSize;
+      font-size: $largeSizeFont;
+    }
+
+    cursor: pointer;
+
+    &:hover{
+      background-color: $hoverColor;
+    }
+  }
+
+  &__link{
+    height: $mediumSize;
+    color: $textColor;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    line-height: $mediumSize;
+    cursor: pointer;
+    border: 2px solid #6294ff;
+
+    &--sublist{
+      background-color: #b1c9fd;
+    }
+
+    &:hover{
+      background-color: $hoverColor;
+    }
+
+    @include large {
+      height: $largeSize;
+      line-height: $largeSize;
+      font-size: $largeSizeFont;
+    }
+  }
+}
