@@ -1,0 +1,70 @@
+@import 'src/modules/shared/base.scss';
+@import 'src/modules/shared/variables.scss';
+
+.post-card {
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+  margin: 10px;
+  font-family: $fonts;
+  font-size: $mediumSizeFont;
+
+  &__acontainer {
+    text-decoration: none;
+  }
+
+  &__title{
+    width: 100%;
+    background-color: $blueColor;
+    height: 40px;
+    padding: 0 10px;
+    line-height: 40px;
+    color: $textColor;
+  }
+
+  &__description{
+    overflow: hidden;
+    text-overflow: ellipsis;    
+    white-space: nowrap;
+    height: 30px;
+    padding: 10px;
+    font-size: $smallSizeFont;
+    color: $textColor;
+  }
+
+  &__date{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__date-created{
+    height: 10px;
+    font-size: $smallSizeFont - 5;
+    text-align: right;
+    margin: 0px 5px 5px 0px;
+    color: $textColor;
+  }
+
+  &__date-clabel{
+    height: 10px;
+    font-size: $smallSizeFont - 5;
+    text-align: right;
+    margin: 0px 5px 5px 0px;
+    color: $textColor;
+  }
+
+  &__date-updated{
+    height: 10px;
+    font-size: $smallSizeFont - 5;
+    text-align: right;
+    margin: 0px 5px 5px 0px;
+    color: $textColor;
+  }
+
+  &__date-ulabel{
+    height: 10px;
+    font-size: $smallSizeFont - 5;
+    text-align: right;
+    margin: 0px 5px 5px 0px;
+    color: $textColor;
+  }
+
+}

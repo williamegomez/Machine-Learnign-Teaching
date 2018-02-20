@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Clase introducción",
+    "description": "Introducción al curso y bases",
+    "udate": "13-02-2018",
+    "cdata": "06-02-2018",
+    "url": "https://github.com/williamegomez/Machine-Learning-Teaching/tree/master/lessons/2018-1/introduction"
+  },
+  {
+    "title": "Clase lógica difusa",
+    "description": "Conceptos de la lógica difusa, sistemas de inferencia",
+    "udate": "20-02-2018",
+    "cdata": "13-02-2018",
+    "url": "https://github.com/williamegomez/Machine-Learning-Teaching/blob/master/lessons/2018-1/Fuzzy%20Logic"
+  }
+]

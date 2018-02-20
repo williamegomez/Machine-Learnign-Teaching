@@ -1,0 +1,9 @@
+article(class="post-card")
+  a(href!= url class="post-card__acontainer")
+    h1(class = "post-card__title")!= title
+    p(class = "post-card__description")!= description
+    div(class = "post-card__date")
+      span(class = "post-card__date-clabel") Fecha de creación:
+      span(class = "post-card__date-created")!= udate
+      span(class = "post-card__date-ulabel") Fecha de actualización:
+      span(class = "post-card__date-updated")!= udate
