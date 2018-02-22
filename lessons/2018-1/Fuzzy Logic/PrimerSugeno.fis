@@ -1,0 +1,44 @@
+[System]
+Name='PrimerSugeno'
+Type='sugeno'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=5
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='Comida'
+Range=[0 10]
+NumMFs=3
+MF1='CBajo':'gaussmf',[1.25 2.5]
+MF2='CMedio':'gaussmf',[1.25 5]
+MF3='CAlto':'gaussmf',[1.25 7.5]
+
+[Input2]
+Name='Servicio'
+Range=[0 10]
+NumMFs=3
+MF1='SBajo':'sigmf',[-1 2.5]
+MF2='SMedio':'trimf',[2.5 5 7.5]
+MF3='SAlto':'sigmf',[1 7.5]
+
+[Output1]
+Name='output1'
+Range=[0 40000]
+NumMFs=3
+MF1='PBaja':'constant',[10000]
+MF2='PMedia':'constant',[20000]
+MF3='PAlta':'constant',[30000]
+
+
+[Rules]
+1 1, 1 (1) : 1
+2 1, 1 (1) : 1
+3 1, 2 (1) : 1
+2 2, 2 (1) : 1
+3 3, 3 (1) : 1
