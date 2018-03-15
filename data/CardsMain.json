@@ -19,5 +19,19 @@
     "udate": "22-02-2018",
     "cdata": "22-02-2018",
     "url": "https://github.com/williamegomez/Machine-Learning-Teaching/blob/master/lessons/2018-1/General%20Topics"
+  },
+  {
+    "title": "Regresión y Clasificación",
+    "description": "Conceptos bases para entender los principios del aprendizaje supervisado",
+    "udate": "12-03-2018",
+    "cdata": "12-03-2018",
+    "url": "https://github.com/williamegomez/Machine-Learning-Teaching/tree/master/lessons/2018-1/Neural%20Networks"
+  },
+  {
+    "title": "Redes Neuronales",
+    "description": "Introducción, conceptos y evolución",
+    "udate": "14-03-2018",
+    "cdata": "14-03-2018",
+    "url": "https://github.com/williamegomez/Machine-Learning-Teaching/tree/master/lessons/2018-1/Neural%20Networks"
   }
 ]
