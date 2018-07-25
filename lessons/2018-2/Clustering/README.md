@@ -5,3 +5,7 @@
 - Fuzzy C means algorithm
 - GK means algorithm
 - Lamda algorithm
+
+## Books:
+
+- Babuska, R. Fuzzy Clustering Lecture.

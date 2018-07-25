@@ -6,3 +6,7 @@
 - Crossover strategies
 - Mutation strategies
 - General structure
+
+## Books:
+
+- A.E. Eiben and J.E. Smith. Introduction to Evolutionary Computing. Springer, 2003
