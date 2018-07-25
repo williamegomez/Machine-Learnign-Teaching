@@ -1,4 +1,4 @@
-## Clustering:
+## Clustering syllabus:
 
 - Unsupervised Learning
 - K-means algorithm

@@ -40,7 +40,9 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(['docs']),
+  new CleanWebpackPlugin(['docs'], {
+    exclude: [ 'CNAME' ],
+  }),
     new StyleLintPlugin(),
     new ExtractTextPlugin('styles.css'),
     new HtmlWebpackPlugin({
